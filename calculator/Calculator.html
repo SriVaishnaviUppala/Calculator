@@ -1,0 +1,55 @@
+<!DOCUMENT html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	 .box{
+	 border-radius:5px;
+	 padding:8px;
+	 width:70px;
+	 margin-top:7px;
+	 font-size:30px;
+	 
+	 
+	 }
+	 #frst{
+	 width:300px;
+	 text-align:right;
+	 border-radius:5px;
+	 margin-top:3px;
+	 height:50px;
+	 font-size:30px;
+	 
+	 
+	 }
+	</style>
+</head>
+
+<body style="background-color:white; text-align:center; border:2px solid red; margin:230px 600px;">
+<h1 style="margin-top:10px;">CALCULATOR</h1>
+<form action="" method="post" name="myform">
+ <input type="text" name="a" id="frst" ><br>
+ <input type="button" class="box"  value="c" style="color:red" onclick="document.myform.a.value= ''"  >
+ <input type="button" class="box" value="%" onclick="document.myform.a.value+='%'" >
+ <input type="button" class="box" value="*" onclick="document.myform.a.value+='*'">
+ <input type="button" class="box" value="Del" style="color:orange;" onclick="document.myform.a.value = myform.a.value.substring(0,myform.a.value.length-1)" ><br>
+ <input type="button"  class="box" value="7" onclick="document.myform.a.value+='7'" >
+ <input type="button" class="box" value="8" onclick="document.myform.a.value+='8'">
+ <input type="button"  class="box" value="9" onclick="document.myform.a.value+='9'">
+ <input type="button" class="box" value="/" onclick="document.myform.a.value+='/'"><br>
+ <input type="button" class="box" value="4" onclick="document.myform.a.value+='4'">
+ <input type="button" class="box" value="5" onclick="document.myform.a.value+='5'">
+ <input type="button" class="box"  value="6" onclick="document.myform.a.value+='6'">
+ <input type="button" class="box" value="-" onclick="document.myform.a.value+='-'"><br>
+ <input type="button" class="box" value="1" onclick="document.myform.a.value+='1'">
+ <input type="button" class="box" value="2" onclick="document.myform.a.value+='2'">
+ <input type="button" class="box" value="3" onclick="document.myform.a.value+='3'" >
+ <input type="button" class="box" value="+" onclick="document.myform.a.value+='+'"><br>
+ <input type="button" class="box" value="=" onclick="document.myform.a.value=eval(document.myform.a.value)">
+ <input type= "button" class="box"  value="0" onclick="document.myform.a.value+='0'">
+ <input type="button" class="box" value="." onclick="document.myform.a.value+='.'">
+ </form>
+ </body>
+ </html>
+ 
